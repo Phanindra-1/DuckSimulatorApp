@@ -15,7 +15,9 @@ public class Main {
         model.performQuack();
 
         model.setFlyBehavior(new FlyRockerPowered());
+        model.setQuackBehavior(new MuteQuack());
 
         model.performFly();
+        model.performQuack();
     }
 }
